@@ -10,6 +10,16 @@ public class Game implements Serializable {
     private Player player2;
     private boolean player1turn = true;
 
+    public boolean isCancelled() {
+        return cancelled;
+    }
+
+    public void setCancelled(boolean cancelled) {
+        this.cancelled = cancelled;
+    }
+
+    private boolean cancelled = false;
+
     public Player getPlayerWinner() {
         return playerWinner;
     }
@@ -84,5 +94,9 @@ public class Game implements Serializable {
         if(!oppositePlayer.getMyField().getContent().containsValue(CellContent.SHIP)){
             playerWinner = getCurrentPlayer();
         }
+    }
+
+    public void setPlayerWinner(Player playerWinner) {
+        this.playerWinner = playerWinner;
     }
 }

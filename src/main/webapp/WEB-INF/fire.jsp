@@ -76,6 +76,7 @@
     </tr>
 </table>
     <button>Fire!</button>
+    <button name="cancel" value="yes">Cancel</button>
 </form>
 </body>
 </html>

@@ -35,6 +35,7 @@
         </c:forEach>
     </table>
     <button>Ready</button>
+    <button name="cancel" value="yes">Cancel</button>
 </form>
 </body>
 </html>
